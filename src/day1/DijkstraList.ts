@@ -27,12 +27,21 @@ export default function dijkstra_list(
 
     dists[source] = 0;
 
+    // This while loop is O(V) since it visits every node
+    // But the hasUnvisited is also O(V) because it will also check every node
+    // So the running time of this loop is O(V^2)
     while (hasUnvisited(seen, dists)) {
         const curr = getLowestUnvisited(seen, dists);
 
         seen[curr] = true;
 
         const adjs = arr[curr]; // list of edges
+
+        // The running time of this loop is O(2E), because we check every edge
+        // twice, but drop constants and it becomes O(E)
+        // Be careful, because this is only because this is and adj list of edges
+        // For a matrix it would be O(E^2) since we are checking every edge to see
+        // if we are connected
         for (let i = 0; i < adjs.length; ++i) {
             const edge = adjs[i];
             if (seen[edge.to]) continue;
