@@ -1,0 +1,578 @@
+<!doctype html>
+<html>
+  <head>
+    <title>The Last Algorithms Course You'll Need | Frontend Masters</title>
+    <style>
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+			font-size: 16px;
+			margin: 0;
+			padding: 30px;
+			background-color: #111;
+			color: #fff; 
+		}
+		
+		h2 {
+				background-color: #333;
+				color: #ccc;
+				padding: 10px;
+		}
+		h3 {
+			border-bottom: 1px solid #333;
+			padding-bottom: 6px;
+		}
+		
+		td {
+		 padding: 3px 0;
+					}
+					td a {
+							color: #ccc;
+							text-decoration: none;
+							padding-right: 20px;
+					}
+					td p {
+							display: inline;
+							margin: 0;
+							padding: 0px;
+					}
+					td p a {
+							color: #5baec0;
+							text-decoration: underline;
+					}
+					h1 a {
+							color: #5baec0;
+							text-decoration: none;
+					}
+					h3 a {
+							color: #5baec0;
+							text-decoration: none;
+					}
+					p a {
+							padding: 0px;
+					}
+					code {
+							background-color: #1e3134;
+							padding: 3px;
+			}
+    </style>
+  </head>
+  <body>
+    <h1><a href="https://frontendmasters.com/courses/algorithms/" target="_blank">The Last Algorithms Course You'll Need</a></h1>
+    <h2>Introduction</h2>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/introduction" target="_blank">Introduction</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/introduction?t=11" target="_blank">00:00:11</a></td><td><p>You can reference the <a href="https://theprimeagen.github.io/fem-algos">course notes</a> throughout the course (fyi he is the using the <a href="https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?hl=en">Dark Reader</a> extension)</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/introduction?t=312" target="_blank">00:05:12</a></td><td><p>Here&rsquo;s a link to check out <a href="https://frontendmasters.com/courses/typescript-go-rust">Polyglot Programming</a> on Frontend Masters</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/introduction?t=338" target="_blank">00:05:38</a></td><td><p>Here are links to check out ThePrimeagen on <a href="https://youtube.com/ThePrimeagen">Youtube</a>, <a href="https://twitch.tv/ThePrimeagen">Twitch</a>, and <a href="https://twitter.com/ThePrimeagen">Twitter</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/introduction?t=423" target="_blank">00:07:03</a></td><td><p>Here are links to check out <a href="https://amzn.to/3bYmBMu">Intro to Algorithms</a> and <a href="https://amzn.to/3Qp9KlB">A Common-Sense Guide&hellip;</a></p>
+</td></tr>
+    </table>
+    <h2>Basics</h2>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/big-o-time-complexity" target="_blank">Big O Time Complexity</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/big-o-time-complexity?t=294" target="_blank">00:04:54</a></td><td><p>One example that shows that practical is always more important than theoretical Big O is with Insertion Sort, which is O(n^2) is faster for smaller datasets than quicksort, which is O(n log n )</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/arrays-data-structure" target="_blank">Arrays Data Structure</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/arrays-data-structure?t=230" target="_blank">00:03:50</a></td><td><p>Arrays are simple contiguous memory spaces</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/arrays-data-structure?t=783" target="_blank">00:13:03</a></td><td><p>An array is not growable</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/arrays-data-structure?t=783" target="_blank">00:13:03</a></td><td><p>The array is the traditional array that you learned in C. You have to create an array of type and it allocates space for that variable, in a contiguous memory space</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/arrays-q-a" target="_blank">Arrays Q&A</a></h3>
+    <h2>Search</h2>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/linear-search-kata-setup" target="_blank">Linear Search & Kata Setup</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/linear-search-kata-setup?t=256" target="_blank">00:04:16</a></td><td><p>Here&rsquo;s a link to check out <a href="https://github.com/ThePrimeagen/kata-machine">Kata Machine</a> on GitHub</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/linear-search-kata-setup?t=258" target="_blank">00:04:18</a></td><td><p><code>git clone git@github.com:ThePrimeagen/kata-machine.git</code> this clone command requires a GitHub SSH key</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/linear-search-kata-setup?t=277" target="_blank">00:04:37</a></td><td><p>If you need more help getting setup, the <a href="https://github.com/ThePrimeagen/kata-machine#how-it-works">setup instructions</a> are in the README</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/binary-search-algorithm" target="_blank">Binary Search Algorithm</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/binary-search-algorithm?t=34" target="_blank">00:00:34</a></td><td><p>When examining a dataset, knowing if it is ordered will bring new advantages and better algorithms than if it weren&rsquo;t</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/binary-search-algorithm?t=447" target="_blank">00:07:27</a></td><td><p>Halving an array to search is called binary search</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/binary-search-algorithm?t=482" target="_blank">00:08:02</a></td><td><p>When halving an array, the Big O will always be O(log n) or O(n log n), depending if we are scanning the array or not</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/pseudo-code-binary-search" target="_blank">Pseudo Code Binary Search</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/implementing-binary-search" target="_blank">Implementing Binary Search</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/two-crystal-balls-problem" target="_blank">Two Crystal Balls Problem</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/implementing-two-crystal-balls" target="_blank">Implementing Two Crystal Balls</a></h3>
+    <h2>Sort</h2>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/bubble-sort" target="_blank">Bubble Sort</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/bubble-sort?t=424" target="_blank">00:07:04</a></td><td><p>The formula to get the sum of numbers between a range is:
+(N + 1) x N/2</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/implementing-bubble-sort" target="_blank">Implementing Bubble Sort</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/linked-list-data-structures" target="_blank">Linked List Data Structures</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/linked-list-data-structures?t=126" target="_blank">00:02:06</a></td><td><p>What sucks about arrays (the typical definition and not arrays in JS because it has some other things helping it, hence why we can use push</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/linked-list-data-structures?t=298" target="_blank">00:04:58</a></td><td><p>In order to access an element in a Linked List you need to iterate through the head (first element</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/linked-list-data-structures?t=298" target="_blank">00:04:58</a></td><td><p>In order to access an element in a Linked List you need to iterate through the head (first element) and get to the element because they are linked</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/linked-list-data-structures?t=393" target="_blank">00:06:33</a></td><td><p>An advantage of a LinkedList is that deletion and insertion is extremely fast since all we have to do is just change the pointers of the nodes</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/linked-list-data-structures?t=473" target="_blank">00:07:53</a></td><td><p>Inserting an item into a linked list is constant time (O(1)) because we don&rsquo;t have to traverse the whole list to make the insertion.
+In an array, to insert, we need to shift the entirety of the array</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/linked-list-data-structures?t=473" target="_blank">00:07:53</a></td><td><p>Deletion in the middle can be costly, because we still need to traverse and if that operation is costly it will be costly to delete</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/linked-list-complexity" target="_blank">Linked List Complexity</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/linked-list-complexity?t=261" target="_blank">00:04:21</a></td><td><p>If you need a data structure for traversing then it&rsquo;s best to pick one more suited for it then a Linked List</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/linked-list-complexity?t=357" target="_blank">00:05:57</a></td><td><p>Explanation of n(n -1)/2 - Gauss sum</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/queue" target="_blank">Queue</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/queue?t=48" target="_blank">00:00:48</a></td><td><p>A queue is first in first out</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/queue?t=64" target="_blank">00:01:04</a></td><td><p>A queue is still a linked list, but a more specific implementation of such</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/queue?t=109" target="_blank">00:01:49</a></td><td><p>In a Queue, if we want to insert we can only do it at the end/tail of the list</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/queue?t=280" target="_blank">00:04:40</a></td><td><p>Since in a queue we don&rsquo;t have to traverse anything, insertion or deletion always happens at the start/end and this is constant</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/implementing-a-queue" target="_blank">Implementing a Queue</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/queue-q-a" target="_blank">Queue Q&A</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/stack" target="_blank">Stack</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/stack?t=98" target="_blank">00:01:38</a></td><td><p>In a stack, it behaves much like a queue, but the only difference is that the head is at the tail of a queue and that you can only add or remove from the head</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/stack?t=100" target="_blank">00:01:40</a></td><td><p>The stack differs from the queue in that you only add to the head</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/implementing-a-stack" target="_blank">Implementing a Stack</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/implementing-a-stack?t=110" target="_blank">00:01:50</a></td><td><p>In a queue you typically do enqueue &amp; deque</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/implementing-a-stack?t=113" target="_blank">00:01:53</a></td><td><p>For a stack you typically do push &amp; pop</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/implementing-a-stack?t=116" target="_blank">00:01:56</a></td><td><p>Javascript uses shift, unshift for queue</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/implementing-a-stack?t=116" target="_blank">00:01:56</a></td><td><p>Javascript uses shift, unshift for queue-like operations</p>
+</td></tr>
+    </table>
+    <h2>Arrays</h2>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/arrays-vs-linked-list" target="_blank">Arrays vs Linked List</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/arrays-vs-linked-list?t=15" target="_blank">00:00:15</a></td><td><p>An advantage of an array is that we get indices accessing, which is a fast operation</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/arraylist" target="_blank">ArrayList</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/arraylist?t=145" target="_blank">00:02:25</a></td><td><p>In an ArrayList you have a fixed size/capacity for the array but, you can also push/pop from it just like a  list</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/arraylist?t=289" target="_blank">00:04:49</a></td><td><p>When we push into an ArrayList and it exceeds the length, then what we can do is create a new ArrayList with a bigger length and then migrate everything into the new one</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/arraylist?t=292" target="_blank">00:04:52</a></td><td><p>If we push past the capacity of the array, then we can either create a new array</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/arraylist?t=532" target="_blank">00:08:52</a></td><td><p>Inserting or removing from arr.length - n will be an operation of O(n) because we will need to shift the array to make space or put in the correct index order</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/arraylist?t=636" target="_blank">00:10:36</a></td><td><p>Interview tip, ArrayList vs LinkedList</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/arraylist?t=637" target="_blank">00:10:37</a></td><td><p>If the tail passes the head then we need to resize</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/arraybuffer" target="_blank">ArrayBuffer</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/arraybuffer?t=236" target="_blank">00:03:56</a></td><td><p>RingBuffers maintain order</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/arraybuffer?t=403" target="_blank">00:06:43</a></td><td><p>You can use a RingBuffer for object pooling, but since it doesn&rsquo;t really matter when/where they are inserted, it&rsquo;s better to use an ArrayList</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/data-structures-q-a" target="_blank">Data Structures Q&A</a></h3>
+    <h2>Recursion</h2>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/recursion" target="_blank">Recursion</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/recursion?t=693" target="_blank">00:11:33</a></td><td><p>When doing the recurse part of recursion we have 3 extra parts:
+- pre recurse call - n + recurse(&hellip;)
+- recurse(&hellip;)
+- post recurse call, if we don&rsquo;t return it before</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/path-finding-base-case" target="_blank">Path Finding: Base Case</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/path-finding-base-case?t=329" target="_blank">00:05:29</a></td><td><p>One of the most important thing in recursion is the base case. This is/are the cases in which the recursion stops</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/path-finding-recursive-case" target="_blank">Path Finding: Recursive Case</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/recursion-q-a" target="_blank">Recursion Q&A</a></h3>
+    <h2>Quick Sort</h2>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/quicksort-algorithm" target="_blank">QuickSort Algorithm</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/implementing-quicksort" target="_blank">Implementing QuickSort</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/implementing-quicksort?t=199" target="_blank">00:03:19</a></td><td><p>Here&rsquo;s a link to check out <a href="https://frontendmasters.com/courses/vim-fundamentals/">VIM Fundamentals</a> on Frontend Masters</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/implementing-quicksort?t=209" target="_blank">00:03:29</a></td><td><p>Here&rsquo;s a link to check out <a href="https://frontendmasters.com/courses/developer-productivity/">Developer Productivity</a> on Frontend Masters</p>
+</td></tr>
+    </table>
+    <h2>Doubly Linked List</h2>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/linked-list-prepend-insertat-append" target="_blank">Linked List: prepend, insertAt, & append</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/linked-list-remove-get-removeat" target="_blank">Linked List: remove, get, & removeAt</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/linked-list-q-a" target="_blank">Linked List Q&A</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/debugging-linked-list" target="_blank">Debugging Linked List</a></h3>
+    <h2>Trees</h2>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/trees-overview" target="_blank">Trees Overview</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/trees-overview?t=115" target="_blank">00:01:55</a></td><td><p>Here&rsquo;s a link to check out <a href="https://astexplorer.net/">AST explorer</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/tree-traversals" target="_blank">Tree Traversals</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/tree-traversals?t=159" target="_blank">00:02:39</a></td><td><p>A pre order traversal is characterized by, first visiting the node and only then doing the pre order:
+visitNode()
+recurseL()
+recurseR()</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/tree-traversals?t=235" target="_blank">00:03:55</a></td><td><p>An in order traversal, in a binary tree, will print out in order in an array as well:</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/tree-traversals?t=249" target="_blank">00:04:09</a></td><td><p>An in order traversal is one where the visiting of the node is done in the middle of each side recursion:</p>
+
+<p>recurseL()
+visitNode()
+recurseR()</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/tree-traversals?t=305" target="_blank">00:05:05</a></td><td><p>And post order means that we are visiting the node at the end of the traversal:</p>
+
+<p>recurseL()
+recurseR()
+visitNode()</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/tree-traversals?t=378" target="_blank">00:06:18</a></td><td><p>In pre order, root is at the start, in order, at middle and post order, at the end</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/implement-tree-traversal" target="_blank">Implement Tree Traversal</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/implement-tree-traversal?t=762" target="_blank">00:12:42</a></td><td><p>DFS means depth first search/traversal which means that we go first to the bottom node</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/implement-tree-traversal?t=833" target="_blank">00:13:53</a></td><td><p>The implicit data structure that we are using here on traversal is a stack</p>
+</td></tr>
+    </table>
+    <h2>Tree Search</h2>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/breadth-first-search" target="_blank">Breadth-First Search</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/breadth-first-search?t=48" target="_blank">00:00:48</a></td><td><p>For Breadth-First Search, the implicit data structure that is used is a Queue, which is the opposite of what is used in DSF</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/breadth-first-search?t=168" target="_blank">00:02:48</a></td><td><p>Look here to view why with an array and un/shift, it&rsquo;s O(n^2).</p>
+
+<p>But, we get to the first node, we add to the list the current and it&rsquo;s children, and then print the current. After that we need to remove the first element, the root, and look at the next child. Doing with an array, we will have to shift the entire array, which is n^2</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/breadth-first-search?t=268" target="_blank">00:04:28</a></td><td><p>The running time of BFS is O(n)</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/breadth-first-search?t=279" target="_blank">00:04:39</a></td><td><p>But, if using a JS Array, it&rsquo;s going to be O(n^2) because of un/shift</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/implement-breadth-first-search" target="_blank">Implement Breadth-First Search</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/search-practice" target="_blank">Search Practice</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/search-practice?t=147" target="_blank">00:02:27</a></td><td><p>Even though, traversing the tree with BFS meant that the shape is the same, that is, that the elements all match equally, it doesn&rsquo;t mean that the structure is the same</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/search-practice?t=150" target="_blank">00:02:30</a></td><td><p>If the node arrangement is different even though the values are the same, then we can say that it is not structurally the same</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/search-practice?t=168" target="_blank">00:02:48</a></td><td><p>This is because we used the wrong traversal.
+Depth first preserves the shape of the tree</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/implement-binary-tree-comparison" target="_blank">Implement Binary Tree Comparison</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/implement-binary-tree-comparison?t=469" target="_blank">00:07:49</a></td><td><p>Here&rsquo;s a link to check out <a href="https://amzn.to/3Qp9KlB">For Programmers Who Don&rsquo;t Know How&hellip;</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/depth-first-find" target="_blank">Depth-First: Find</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/depth-first-find?t=58" target="_blank">00:00:58</a></td><td><p>At a BST there is a rule for every node and that is that the left side of the node has to be less than or equal to the current node and the right side has to be bigger than the current node</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/depth-first-find?t=95" target="_blank">00:01:35</a></td><td><p>It can be left less than or equal or right greater than or equal or even both, so it divides the tree equally in case of it being all the same</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/depth-first-find?t=207" target="_blank">00:03:27</a></td><td><p>A binary search tree is good when we are dynamically adding/removing elements from a tree because then we can still find the element we want more quickly</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/depth-first-find?t=514" target="_blank">00:08:34</a></td><td><p>But there is still some traversal cost</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/depth-first-insert" target="_blank">Depth-First: Insert</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/depth-first-insert?t=96" target="_blank">00:01:36</a></td><td><p>The runtime for a BST depends on how balanced, that is if the leafs are on the same level. Because of that it can go from log n to n, where n is the height of the tree</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/depth-first-insert?t=105" target="_blank">00:01:45</a></td><td><p>Predominant ways to balance a tree are, AVL and Red-Black Trees</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/depth-first-delete" target="_blank">Depth-First: Delete</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/depth-first-delete?t=376" target="_blank">00:06:16</a></td><td><p>How to pick which side to pick a node will be based on the height of it</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/binary-search-tree-q-a" target="_blank">Binary Search Tree Q&A</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/implement-depth-first-search" target="_blank">Implement Depth-First Search</a></h3>
+    <h2>Heap</h2>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/heap" target="_blank">Heap</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/heap?t=61" target="_blank">00:01:01</a></td><td><p>An heap, which is a binary tree, can be divided into two types:
+- MaxHeap, where every child and grandchild is smaller than the current node
+- MinHeap, where every child and grandchild is greater than the current node</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/heap?t=75" target="_blank">00:01:15</a></td><td><p>This means that whenever we add/remove a node, the tree must the adjusted</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/heap?t=75" target="_blank">00:01:15</a></td><td><p>And in a Heap there is no traversion</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/heap?t=144" target="_blank">00:02:24</a></td><td><p>Heaps are weakly ordered, meaning that it&rsquo;s not globally ordered, but at one point it is</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/heap?t=220" target="_blank">00:03:40</a></td><td><p>A Heap is always a complete tree, which means that it&rsquo;s always leveled</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/heap?t=255" target="_blank">00:04:15</a></td><td><p>To add a node, we go to the final spot in our tree and then if the conditions aren&rsquo;t met we bubble up until it is met.
+We keep switching the values with the upper node until the condition is met</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/heap?t=1090" target="_blank">00:18:10</a></td><td><p>Since the tree is a complete tree, this means that the operations of delete or insert are O(log n), because we keep dviding when going down or up</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/implementing-heap" target="_blank">Implementing Heap</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/implementing-heap?t=487" target="_blank">00:08:07</a></td><td><p>It still is a bit confusing how the fact that if the left idx is &gt;= than the length, that means that we don&rsquo;t have more children</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/tries" target="_blank">Tries</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/tries?t=21" target="_blank">00:00:21</a></td><td><p>Trie (for Retrieval) Tree and can also be called prefix trees and digital trees</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/tries?t=42" target="_blank">00:00:42</a></td><td><p>It can have a lookup of O(1)</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/tries?t=89" target="_blank">00:01:29</a></td><td><p>The root of a Trie Tree does not have a value</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/tries?t=243" target="_blank">00:04:03</a></td><td><p>Whenever a word exists, the last letter node for the word will have a flag indicating that it can be a word or you can also have it point to another node with a value *</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/tries?t=367" target="_blank">00:06:07</a></td><td><p>For returning possible words, if we apply DFS, then we will always get the results in alphabetical ordering</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/tries?t=700" target="_blank">00:11:40</a></td><td><p>Example of how to use Trie Trees for caching mechanism</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/tries?t=853" target="_blank">00:14:13</a></td><td><p>A Trie Tree, for the English dictionary, is O(1), because it is bound by the length of words in the dictionary.</p>
+</td></tr>
+    </table>
+    <h2>Graphs</h2>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/graphs-overview" target="_blank">Graphs Overview</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/graphs-overview?t=134" target="_blank">00:02:14</a></td><td><p>In a graph the nodes can have connections in any direction</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/graphs-overview?t=175" target="_blank">00:02:55</a></td><td><p>A cycle is, if I can visit 3 nodes and then go back to myself</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/graphs-overview?t=230" target="_blank">00:03:50</a></td><td><p>A connected graph means that every node has a path to another node</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/graphs-overview?t=240" target="_blank">00:04:00</a></td><td><p>Directed graphs, means that the connections have directions and those connections can have certain weights. Think back to Networking (I know it was something similar but I don&rsquo;t remember the name)</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/graphs-overview?t=339" target="_blank">00:05:39</a></td><td><p>In undirected graphs, the weights would be equal for both directions, A to B and B to A both would have a weight of 10, for example</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/graphs-overview?t=363" target="_blank">00:06:03</a></td><td><p>Dag is short for directed acyclic graph</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/graphs-overview?t=421" target="_blank">00:07:01</a></td><td><p>A node in a graph can also be called a vertex</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/graphs-overview?t=421" target="_blank">00:07:01</a></td><td><p>And a connection between two nodes is called an edge</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/searching-an-adjacency-matrix" target="_blank">Searching an Adjacency Matrix</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/searching-an-adjacency-matrix?t=148" target="_blank">00:02:28</a></td><td><p>An adjacency list is a list of all the vertexes and their associated connections and weights.</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/searching-an-adjacency-matrix?t=208" target="_blank">00:03:28</a></td><td><p>There is also an adjacency matrix in which you write the number of vertexes in a row col arrangement and then map out the weights for each edge/connection.
+But one thing to know about this is that it is O(V^2) because we are creating a square matrix</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/implementing-bfs-on-adjacency-matrix" target="_blank">Implementing BFS on Adjacency Matrix</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/implement-dfs-on-adjacency-list" target="_blank">Implement DFS on Adjacency List</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/implement-dfs-on-adjacency-list?t=656" target="_blank">00:10:56</a></td><td><p>The running time of DFS on an adjacency list is O(V + E)</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/dijkstra-s-shortest-path" target="_blank">Dijkstra's Shortest Path</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/dijkstra-s-shortest-path?t=60" target="_blank">00:01:00</a></td><td><p>Dijkstra&rsquo;s algorithm is in a family of greedy algorithms</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/dijkstra-s-shortest-path?t=91" target="_blank">00:01:31</a></td><td><p>Dijkstra graphs don&rsquo;t have negative weights</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/implement-dijkstra-s-shortest-path" target="_blank">Implement Dijkstra's Shortest Path</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/dijkstra-s-shortest-path-run-time" target="_blank">Dijkstra's Shortest Path Run Time</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/dijkstra-s-shortest-path-run-time?t=286" target="_blank">00:04:46</a></td><td><p>We can use a min heap to improve the running time of hasUnvisited().</p>
+
+<p>I didn&rsquo;t understand how :(</p>
+</td></tr>
+    </table>
+    <h2>Maps & LRU</h2>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/maps" target="_blank">Maps</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/maps?t=62" target="_blank">00:01:02</a></td><td><p>The load factor is the amount of data points vs the amount of storage.
+For example, if we have 7 items and a capacity of 10, then the load factor is <sup>7</sup>&frasl;<sub>10</sub> = 0.7</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/maps?t=193" target="_blank">00:03:13</a></td><td><p>It&rsquo;s a list that is ordered by most recent requested/used to least</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/lru-cache" target="_blank">LRU Cache</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/lru-cache?t=394" target="_blank">00:06:34</a></td><td><p>An LRU uses an HashMap to skip over the limitation of value retrieval from a doubly linked list.</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/lru-cache?t=394" target="_blank">00:06:34</a></td><td><p>The HashMap will have the key type and then for the value type it will have the node with the value and links to other nodes</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/lru-cache-setup" target="_blank">LRU Cache Setup</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/implementing-an-lru-cache" target="_blank">Implementing an LRU Cache</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/implementing-an-lru-cache?t=667" target="_blank">00:11:07</a></td><td><p>Detach function does not alter length, it just detach the node from the list</p>
+</td></tr>
+    </table>
+    <h2>Wrapping Up</h2>
+    <h3><a href="https://frontendmasters.com/courses/algorithms/wrapping-up" target="_blank">Wrapping Up</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/algorithms/wrapping-up?t=66" target="_blank">00:01:06</a></td><td><p>Here&rsquo;s a link to check out <a href="https://frontendmasters.com/courses/vim-fundamentals/">VIM Fundamentals</a> on Frontend Masters</p>
+</td></tr>
+    </table>
+    </body>
+</html>
